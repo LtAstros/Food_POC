@@ -7,7 +7,7 @@ This dataset has food recipes information from [food.com](food.com). It was orig
 ### Getting the Data
 {:.no_toc}
 
-The data is downloadable [TODO: Add a link]().
+The data is downloadable [here TODO: Add a link]().
 
 
 A data dictionary is available at this [page](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv) under *Table 1. Variable descriptions*.
@@ -25,9 +25,8 @@ A data dictionary is available at this [page](https://www.kaggle.com/datasets/sh
 {:.no_toc}
 
 Follow all of the steps in the [Requirement: Cleaning and EDA](#requirement-cleaning-and-eda-exploratory-data-analysis) section. Note:
-- You might want to expand the nutrition column. In particular, the order of that list is `calories (#), total fat (PDV), sugar (PDV) , sodium (PDV) , protein (PDV) , saturated fat (PDV) , and carbohydrates (PDV)`
-- You might also want to explore the columns that seems to have a list of data.
-- You might also want to explore the dtypes for each column and change them into easier-to-handle dtypes if possible.
+- As stated in the data dictionary, the nutrition column stored data as lists in this order: `[calories (#), total fat (PDV), sugar (PDV) , sodium (PDV) , protein (PDV) , saturated fat (PDV) , and carbohydrates (PDV)]`. If you want to to use this data for your analysis, you may want to turn these lists into new columns for each of the values.
+- You might also want to explore the dtypes for each column and change them into easier-to-handle dtypes if possible. (i.e. convert the data that looks like lists to actual lists or converting the dates into `datetime`)
 
 
 
