@@ -3,14 +3,20 @@
 
 ## Food 🍽️
 This dataset has food recipes information from [food.com](food.com). It was originally scrapped and used by the authors to [this](https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf) recommender system paper.
+- Note: While it is a great dataset that can help you build an exceptional project on your resume, it is quite large. And thus, you have the option to follow our guidelines below to process it into a smaller dataset for your analysis.
 
 ### Getting the Data
 {:.no_toc}
 
-The data is downloadable [here TODO: Add a link]().
+The data is downloadable [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions/download?datasetVersionNumber=2). You need to download two datasets (`RAW_recipes.csv` and `RAW_interactions.csv`).
+
+Optional steps to make it a smaller dataset if you do not have too much computation power on your computer:
+1. Left merge the recipe and the interaction datasets together.
+2. In the merged dataset, fill all 0 rating as `np.nan` because the minimum possible rating is 1, and those 0's were caused by people forgot to gave a rating while they left a comment.
+3. Find the average rating per recipe and merge this information to the original recipe dataset.
 
 
-A data dictionary is available at this [page](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv) under *Table 1. Variable descriptions*.
+A data dictionary is available at this [page](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv).
 
 
 ### Sample Questions
